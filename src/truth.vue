@@ -80,7 +80,7 @@ function resetTruth() {
 
 <template>
   <div v-if="!revealed" id="app-content">
-    <button v-if="!gameData.derejuvenationunl && !gameData.truthreveal"
+    <button v-if="!gameData.truthreveal"
         id="truth" @click="revealTruth">REVEAL THE TRUTH</button>
 <h2 v-else class="final-text">You know what you have to do....</h2>
   </div>
