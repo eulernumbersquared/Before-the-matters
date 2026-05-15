@@ -18,7 +18,7 @@ export const memchallenges: challenge[] = reactive([
 ])
 
 export function reset() {
-    gameData.Time = new Decimal(1e50)
+    gameData.Time = new Decimal(1)
     upgrades.forEach(u => {
     u.amount = new Decimal(0)
     u.cost = new Decimal(u.basecost)
